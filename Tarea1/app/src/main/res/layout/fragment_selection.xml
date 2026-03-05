@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elementos de Selección"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Permiten al usuario elegir entre varias opciones o activar/desactivar configuraciones." />
+
+    <CheckBox
+        android:id="@+id/cb_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Acepto los términos" />
+
+    <RadioGroup
+        android:id="@+id/rg_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rb_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción A" />
+
+        <RadioButton
+            android:id="@+id/rb_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción B" />
+    </RadioGroup>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/sw_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Activar notificaciones" />
+
+    <TextView
+        android:id="@+id/tv_selection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Estado: Pendiente"
+        android:textSize="16sp" />
+
+</LinearLayout>
