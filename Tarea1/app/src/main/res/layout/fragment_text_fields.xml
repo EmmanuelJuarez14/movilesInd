@@ -38,13 +38,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/btn_go_to_lists"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Ir a la lista de ejemplos"
-        style="@style/Widget.MaterialComponents.Button.TextButton" />
-
+    
 </LinearLayout>

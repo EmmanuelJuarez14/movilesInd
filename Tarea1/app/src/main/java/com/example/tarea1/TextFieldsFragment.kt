@@ -18,14 +18,9 @@ class TextFieldsFragment : Fragment() {
         val input = view.findViewById<EditText>(R.id.edit_text_input)
         val btn = view.findViewById<Button>(R.id.btn_show_text)
         val result = view.findViewById<TextView>(R.id.tv_result)
-        val btnGoToLists = view.findViewById<Button>(R.id.btn_go_to_lists)
 
         btn.setOnClickListener {
             result.text = "Ingresaste: ${input.text}"
-        }
-
-        btnGoToLists.setOnClickListener {
-            (activity as? MainActivity)?.navigateToTab(R.id.nav_lists)
         }
 
         return view
